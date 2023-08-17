@@ -2,9 +2,44 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Timer</title>
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <!-- ICONS -->
+    <script src="./all.min.css"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section>
+        <div class="container">
+            <h1>Timer</h1>
 
+            <div class="painel">
+                <p id="work">Work</p>
+                <p id="break">Break</p>
+            </div>
+
+            <div class="timer">
+                <div class="circle">
+                    <div class="time">
+                        <p id="minutes">25</p>
+                        <p>:</p>
+                        <p id="seconds">00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="controls">
+                <button id="start" onclick="start()"><i class="fa-solid fa-play"></i></button>
+
+                <a id="reset" href="/"><i class="fa-solid fa-arrow-rotate-left"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Script -->
+    <script src="./script.js"></script>
 </body>
 </html>
